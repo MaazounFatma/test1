@@ -1,0 +1,8 @@
+<h1>Film à voir aujourd'hui</h1>
+<h2>{{dateJour |date:'dd/MMMM'}}</h2>
+<ul *ngFor="let f of films">
+  <li>
+    <app-film [film]="f" [profil]="profil" [pro]="pro"></app-film>
+  </li>
+</ul>
+Donnez la durée minimale du film <input type="number" />
